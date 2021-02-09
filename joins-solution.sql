@@ -32,10 +32,12 @@ WHERE "warehouse_product"."product_id" = 6;
 
 
 --6. How many customers do we have?
-SELECT count(*) FROM "customers"; 4
+SELECT count(*) FROM "customers"; 
+4
 
 --7. How many products do we carry?
-
+SELECT count(*) FROM "products"; 
+7
 
 --8. What is the total available on-hand quantity of diet pepsi?
 
