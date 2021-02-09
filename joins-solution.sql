@@ -32,7 +32,7 @@ WHERE "warehouse_product"."product_id" = 6;
 
 
 --6. How many customers do we have?
-
+SELECT count(*) FROM "customers"; 4
 
 --7. How many products do we carry?
 
