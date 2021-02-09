@@ -11,7 +11,13 @@ JOIN "line_items"
 ON "orders"."id" = "line_items"."order_id";
 
 --3. Which warehouses have cheetos?
-
+SELECT "warehouse"."warehouse"
+FROM "products"
+JOIN "warehouse_product"
+ON "products"."id" = "warehouse_product"."product_id"
+JOIN "warehouse"
+ON "warehouse"."id" = "warehouse_product"."warehouse_id"
+WHERE "warehouse_product"."product_id" = 5;
 
 --4. Which warehouses have diet pepsi?
 
